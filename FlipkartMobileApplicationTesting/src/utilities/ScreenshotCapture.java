@@ -24,7 +24,7 @@ public class ScreenshotCapture {
 		FileUtils.copyFile(source, finalDestination);
 		//Returns the captured file path
 		return destination;
-		//
+		// comment
 	}
 
 }
