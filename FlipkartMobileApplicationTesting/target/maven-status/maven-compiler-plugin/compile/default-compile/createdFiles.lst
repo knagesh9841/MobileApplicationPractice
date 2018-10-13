@@ -1,0 +1,12 @@
+utilities\ScreenshotCapture.class
+tests\MenuVerificationTest.class
+pages\LoginPage.class
+utilities\AppiumServerJava.class
+utilities\ExtentManager.class
+listeners\TestListener.class
+pages\HomePage.class
+utilities\ClearMemoryOfAppllication.class
+pages\MenuPage.class
+tests\BaseTest.class
+utilities\ThreadLocalDriver.class
+tests\LoginTest.class

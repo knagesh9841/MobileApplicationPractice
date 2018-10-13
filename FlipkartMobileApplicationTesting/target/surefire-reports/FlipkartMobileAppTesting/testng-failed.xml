@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [FlipkartMobileAppTesting]">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test name="testngTest(failed)">
+    <classes>
+      <class name="tests.MenuVerificationTest">
+        <methods>
+          <include name="startAppiumServer"/>
+          <include name="closeDriver"/>
+          <include name="stopAppiumServer"/>
+          <include name="pageInitialize"/>
+        </methods>
+      </class> <!-- tests.MenuVerificationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="flipkartNotificationTab"/>
+          <include name="pageInitialize"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [FlipkartMobileAppTesting] -->

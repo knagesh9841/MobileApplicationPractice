@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 162.871 sec <<< FAILURE! - in TestSuite
+flipkartNotificationTab(tests.LoginTest)  Time elapsed: 2.911 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Notifications (2)] but found [Notifications (4)]
+	at tests.LoginTest.flipkartNotificationTab(LoginTest.java:33)
+
