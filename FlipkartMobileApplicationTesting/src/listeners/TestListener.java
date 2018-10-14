@@ -18,6 +18,7 @@ import utilities.ThreadLocalDriver;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 
 public class TestListener implements ITestListener{
 	
@@ -80,10 +81,11 @@ public class TestListener implements ITestListener{
 	
 	public static void pass(String ExpectValue,String aValue, AppiumDriver<WebElement> driver)
 	{
-		test.get().pass(ExpectValue+"::"+aValue);
+		//test.get().pass(ExpectValue+"::"+aValue);
 		 try {
 				String screenshotPath = ScreenshotCapture.getScreenshot(driver, "screeshot");
-				test.get().addScreenCaptureFromPath(screenshotPath);
+				//test.get().addScreenCaptureFromPath(screenshotPath);
+				test.get().pass(ExpectValue+"::"+aValue, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			} catch (Exception e) {
 				
 				e.printStackTrace();
@@ -92,10 +94,11 @@ public class TestListener implements ITestListener{
 	
 	public static void fail(String ExpectValue,String aValue, AppiumDriver<WebElement> driver)
 	{
-		test.get().fail(ExpectValue+"::"+aValue);
+		//test.get().fail(ExpectValue+"::"+aValue);
 		 try {
 				String screenshotPath = ScreenshotCapture.getScreenshot(driver, "screeshot");
-				test.get().addScreenCaptureFromPath(screenshotPath);
+				//test.get().addScreenCaptureFromPath(screenshotPath);
+				test.get().fail(ExpectValue+"::"+aValue, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			} catch (Exception e) {
 				
 				e.printStackTrace();
